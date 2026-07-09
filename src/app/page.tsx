@@ -325,11 +325,11 @@ export default function Dashboard() {
             <div className="flex flex-col space-y-4 p-5 bg-zinc-50 dark:bg-zinc-900 rounded-lg border border-zinc-200 dark:border-zinc-800 max-w-md">
               <div className="flex items-center space-x-3">
                 <Checkbox id="zip" checked={generateZip} onCheckedChange={(c) => setGenerateZip(c as boolean)} disabled={isProcessing} />
-                <Label htmlFor="zip" className="cursor-pointer font-normal">Package outputs to local .zip</Label>
+                <Label htmlFor="zip" className="cursor-pointer font-normal">Zip Download</Label>
               </div>
               <div className="flex items-center space-x-3">
                 <Checkbox id="email" checked={sendEmails} onCheckedChange={(c) => setSendEmails(c as boolean)} disabled={isProcessing} />
-                <Label htmlFor="email" className="cursor-pointer font-normal">Initiate SMTP email dispatch</Label>
+                <Label htmlFor="email" className="cursor-pointer font-normal">Email Dispatch</Label>
               </div>
             </div>
 
